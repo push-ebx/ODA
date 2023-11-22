@@ -1,7 +1,7 @@
 import styles from './header.module.scss';
 import Image from 'next/image';
-import logo from '@/public/icons/logo.svg';
-import company_name from '@/public/images/company-name.svg';
+import logo from '@/public/svg/logo.svg';
+import company_name from '@/public/svg/company-name.svg';
 import clsx from 'clsx';
 import { Button } from "@/app/ui";
 

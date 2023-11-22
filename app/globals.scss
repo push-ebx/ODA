@@ -3,6 +3,7 @@
   --yellow-color: #FBBC0F;
   --white-color: #FFFFFF;
   --background-color: #FFFFFF;
+  --card-backgound: #F9F8F8;
 }
 
 @mixin for-desktop-down {
@@ -24,6 +25,7 @@ html {
   height: 100vh;
   font-size: 1.111vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,14 +42,12 @@ img {
   font-style: italic;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  //max-width: 100%;
   width: 100%;
   height: auto;
-  border-radius: 0.625rem;
 }
 
 .title_1 {
-  /* 1440/Title/Title-1 */
   color: var(--black-color);
   font-size: 4.375rem;
   font-weight: 700;
@@ -56,12 +56,26 @@ img {
 }
 
 .title_2 {
-  /* 1440/Title/Title-2 */
   color: var(--black-color);
   font-size: 3.125rem;
   font-weight: 600;
   line-height: 110%;
   letter-spacing: -0.0625rem;
+}
+
+.headline_1 {
+  color: var(--black-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.025rem;
+}
+
+.headline_2 {
+  color: var(--black-color);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 120%;
 }
 
 .subhead_1 {
@@ -78,10 +92,24 @@ img {
   line-height: 2.1rem;
 }
 
+.text_1 {
+  color: var(--black-color);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
 .text_2 {
   color: var(--black-color);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 100%;
+  letter-spacing: -0.0175rem;
+}
+
+.footer_1 {
+  color: var(--black-color);
+  font-size: 0.875rem;
+  font-weight: 400;
   letter-spacing: -0.0175rem;
 }
