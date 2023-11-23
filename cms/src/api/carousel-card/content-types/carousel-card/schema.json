@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carousel_cards",
+  "info": {
+    "singularName": "carousel-card",
+    "pluralName": "carousel-cards",
+    "displayName": "carousel-card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "list": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

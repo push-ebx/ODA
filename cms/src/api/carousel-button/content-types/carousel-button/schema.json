@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carousel_buttons",
+  "info": {
+    "singularName": "carousel-button",
+    "pluralName": "carousel-buttons",
+    "displayName": "carousel-button"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text_button": {
+      "type": "string",
+      "required": true
+    },
+    "icon_button": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
