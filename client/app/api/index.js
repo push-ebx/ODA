@@ -53,3 +53,16 @@ export async function getFAQ() {
     console.log("error", error.message)
   }
 }
+
+export async function getPresentationLink() {
+  noStore();
+  const query_url = strapi_url + '/api/home-page?populate=*';
+
+  try {
+    const response = await fetch(query_url)
+    const {data} = await response.json();
+    return strapi_url + data.attributes.presentation.data.attributes.url;
+  } catch (error){
+    console.log("error", error.message)
+  }
+}

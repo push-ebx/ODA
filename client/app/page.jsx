@@ -1,40 +1,47 @@
 import styles from './page.module.scss';
 import Image from 'next/image';
 import clsx from "clsx";
-import { Button } from "@/app/ui";
 import { Carousel } from "@/app/ui/carousel";
 import { FAQ } from "@/app/ui/faq";
-import { card_bg_1, card_bg_2, card_bg_3, card_bg_4, card_bg_5 } from '@/public/svg';
+import { card_bg_2, card_bg_3, card_bg_5 } from '@/public/svg';
 import { lock, people, headphone, management } from '@/public/png';
-import { getCarouselButtons, getCarouselCards, getFAQ } from "@/app/api";
+import { card_bg_4, card_bg_1 } from '@/public/jpg';
+import {getCarouselButtons, getCarouselCards, getFAQ, getPresentationLink} from "@/app/api";
+import {ButtonLink} from "@/app/ui/button-link";
+import {PopupButton} from "@/app/ui/popup-button";
+import {Form} from "@/app/ui/form";
 
 export default async function Home({ repo }) {
   const carousel_cards = await getCarouselCards();
   const carousel_buttons = await getCarouselButtons();
   const faq = await getFAQ();
+  const presentation_link = await getPresentationLink();
 
   return (
     <main className={styles.main}>
       <div className={styles.container}>
         <section className={clsx(styles.welcome_section, styles.section)}>
-          <div className={styles.titles_buttons}>
-            <h1 className={'title_1'}>Все процессы таксопарка в одной системе</h1>
-            <span className={'subhead_1'}>Готовое решение ваших повседневных задач</span>
+          <h1 className={'title_1'}>Все процессы таксопарка в одной системе</h1>
+          <span className={'subhead_1'}>Готовое решение ваших повседневных задач</span>
+
+          <div className={styles.buttons_image}>
             <div className={styles.buttons}>
-              <Button>Подключиться</Button>
-              <Button>Открыть презентацию</Button>
+              <PopupButton />
+              <ButtonLink link={presentation_link} download>
+                Открыть презентацию
+              </ButtonLink>
             </div>
-          </div>
-          <div className={styles.image_wrapper}>
-            <div className={styles.rects}>
-              <div className={styles.rect}></div>
-              <div className={styles.group}>
+            <div className={styles.image_wrapper}>
+              <div className={styles.rects}>
                 <div className={styles.rect}></div>
-                <div className={styles.rect}></div>
-                <div className={styles.rect}></div>
+                <div className={styles.group}>
+                  <div className={styles.rect}></div>
+                  <div className={styles.rect}></div>
+                  <div className={styles.rect}></div>
+                </div>
               </div>
+              <Image src={management} alt={'management'}/>
             </div>
-            <Image src={management} alt={'management'}/>
           </div>
         </section>
 
@@ -48,9 +55,9 @@ export default async function Home({ repo }) {
                 <span className={'headline_1'}>
                   Весь функционал в вашем браузере
                 </span>
-                <span className={'text_1'}>ODA - это облачный сервис, который не требует установки. А доступ к актуальным данным вы можете получить с любого устройства</span>
+                <span className={'text_1'}>ODA – это облачный сервис, который не требует установки. А доступ к актуальным данным вы можете получить с любого устройства</span>
               </div>
-                <Image src={card_bg_1} alt={'card_bg_1'}/>
+              <Image src={card_bg_1} alt={'card_bg_1'}/>
             </div>
             <div className={styles.card}>
               <div className={styles.description}>
@@ -85,15 +92,17 @@ export default async function Home({ repo }) {
             </div>
           </div>
           <div className={styles.buttons}>
-            <Button>Подключиться</Button>
-            <Button>Открыть презентацию</Button>
+            <PopupButton />
+            <ButtonLink link={presentation_link} download>
+              Открыть презентацию
+            </ButtonLink>
           </div>
         </section>
 
         <section className={clsx(styles.section, styles.carousel_section)}>
           <h2 className={'title_2'}>Сделает все за вас</h2>
           <span className={'subhead_2'}>Гибкая система модулей позволяет автоматизировать именно те процессы, которые нужны вам</span>
-          <Carousel cards={carousel_cards} buttons={carousel_buttons}/>
+          <Carousel cards={carousel_cards} buttons={carousel_buttons} presentation_link={presentation_link} />
         </section>
 
         <section className={clsx(styles.connect_train_section, styles.section)}>
@@ -136,11 +145,7 @@ export default async function Home({ repo }) {
             <h2 className={'title_2'}>Автоматизируйте ваш автопарк</h2>
             <span className={'subhead_2'}>Оставьте заявку и мы свяжемся с вами в ближайшее время</span>
           </div>
-          <div className={styles.form}>
-            <input type="text" placeholder={'Ваше имя'}/>
-            <input type="text" placeholder={'Ваш телефон'}/>
-            <Button>Отправить заявку</Button>
-          </div>
+          <Form />
         </section>
       </div>
     </main>

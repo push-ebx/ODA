@@ -6,7 +6,7 @@ import clsx from 'clsx';
 
 export const Footer = () => {
   return (
-    <header className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.logo}>
         <Image className={styles.icon} src={logo} alt="logo"/>
         <Image className={styles.name} src={company_name} alt="company_name"/>
@@ -29,6 +29,6 @@ export const Footer = () => {
         <span className={'footer_1'}>Политика конфиденциальности</span>
         <span className={'footer_1'}>Пользовательское соглашение</span>
       </div>
-    </header>
+    </footer>
   )
 }

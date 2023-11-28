@@ -1,3 +1,5 @@
+@import "../../breakpoints";
+
 .faq {
   display: flex;
   flex-direction: column;
@@ -11,14 +13,19 @@
     flex-direction: column;
     transition: height .5s;
 
+    @include for-tablet-down() {
+      padding: 1.5rem;
+    }
+
     .question {
       display: flex;
       justify-content: space-between;
+      column-gap: 3.5rem;
       align-items: center;
 
       span {
         margin: 0;
-        max-width: 55rem;
+        //max-width: 55rem;
       }
 
       img {

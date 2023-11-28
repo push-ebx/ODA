@@ -1,10 +1,18 @@
-.carousel {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+@import "../../breakpoints";
+
+.nav {
+  @include for-tablet-down() {
+    padding: 0 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    max-width: 100vw;
+    width: 100vw;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
 
   .buttons {
-    //max-width: 75rem;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,6 +20,11 @@
     display: flex;
     gap: 1.25rem;
     margin: 5rem 0;
+
+    @include for-tablet-down() {
+      width: auto;
+      flex-wrap: nowrap;
+    }
 
     button {
       gap: 1.1rem;
@@ -21,6 +34,7 @@
       padding: 1.25rem 1.59rem;
       font-size: 1.25rem;
       transition: background 0.3s;
+      white-space: nowrap;
     }
 
     .active {
@@ -32,15 +46,33 @@
       height: 1.57rem;
     }
   }
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  //@include for-tablet-down() {
+  //  width: 100vw;
+  //}
+
+
 
   .slider {
     width: 100%;
     display: flex;
-    transition: transform 0.5s;
+    transition: transform 0.8s ease-in-out;
     column-gap: 15rem;
+
+    @include for-tablet-down() {
+      //padding: 0 1.25rem;
+    }
 
     .card {
       position: relative;
+      //min-width: 27.5rem;
       min-width: 100%;
       padding: 6.25rem 0 4.38rem 4.35rem;
       background: var(--card-backgound);
@@ -49,15 +81,47 @@
       column-gap: 5rem;
       overflow: hidden;
 
-      .card_info {
-        max-width: 32.75rem;
+      @include for-tablet-down() {
+        padding: 2.25rem 1.25rem;
+      }
+
+      .info_button {
+        max-width: 32.3rem;
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        row-gap: 1rem;
 
-        span {
-          text-align: left;
-          margin-bottom: 1.87rem;
+        @include for-tablet-down() {
+          align-items: center;
+        }
+
+        .card_info {
+
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          span {
+            text-align: left;
+            margin-bottom: 1.9rem;
+          }
+        }
+
+        a {
+          button {
+            background: var(--white-color);
+
+            @include for-tablet-down() {
+              width: 100%;
+            }
+          }
+
+          @include for-tablet-down() {
+            width: 100%;
+          }
         }
       }
 
@@ -78,14 +142,19 @@
         }
       }
 
-      img {
-        //width: auto;
-        //max-height: 25rem;
-        //position: absolute;
-        //display: none;
+      .img_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-        //width: 43.4375rem;
-        //margin-left: 13.8rem;
+        @include for-tablet-down() {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }

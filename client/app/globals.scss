@@ -1,3 +1,5 @@
+@import "breakpoints";
+
 :root {
   --black-color: #000000;
   --yellow-color: #FBBC0F;
@@ -5,14 +7,6 @@
   --background-color: #FFFFFF;
   --card-backgound: #F9F8F8;
 }
-
-@mixin for-desktop-down {
-  @media (max-width: 1440px) { @content; }
-}
-
-//@mixin for-tablet-down {
-//  @media (max-width: 1070px) { @content; }
-//}
 
 * {
   box-sizing: border-box;
@@ -26,6 +20,10 @@ html {
   font-size: 1.111vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+  @include for-tablet-down() {
+    font-size: 3.333vw;
+  }
 }
 
 body {
@@ -53,6 +51,11 @@ img {
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.0875rem;
+
+  @include for-tablet-down() {
+    font-size: 2.5rem;
+    letter-spacing: -0.05rem;
+  }
 }
 
 .title_2 {
@@ -61,6 +64,10 @@ img {
   font-weight: 600;
   line-height: 110%;
   letter-spacing: -0.0625rem;
+
+  @include for-tablet-down() {
+    font-size: 2.25rem;
+  }
 }
 
 .headline_1 {
@@ -69,6 +76,11 @@ img {
   font-weight: 600;
   line-height: 110%;
   letter-spacing: -0.025rem;
+
+  @include for-tablet-down() {
+    font-size: 2rem;
+    letter-spacing: -0.02rem;
+  }
 }
 
 .headline_2 {
@@ -83,6 +95,10 @@ img {
   font-size: 1.875rem;
   font-weight: 400;
   line-height: 140%;
+
+  @include for-tablet-down() {
+    font-size: 1.5rem;
+  }
 }
 
 .subhead_2 {
@@ -94,9 +110,13 @@ img {
 
 .text_1 {
   color: var(--black-color);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 140%;
+
+  @include for-tablet-down() {
+    line-height: 130%;
+  }
 }
 
 .text_2 {
@@ -112,4 +132,9 @@ img {
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: -0.0175rem;
+
+  @include for-tablet-down() {
+    font-size: 1rem;
+    letter-spacing: -0.03rem;
+  }
 }

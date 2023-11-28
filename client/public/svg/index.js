@@ -6,6 +6,10 @@ import building from './building.svg';
 import brain from './brain.svg';
 import man from './man.svg';
 import driver from './driver.svg';
+import company_name from './company-name.svg';
+import burger from './burger.svg';
+import logo from './logo.svg';
+import cross from './cross.svg';
 
 import card_bg_1 from './card-bg-1.svg';
 import card_bg_2 from './card-bg-2.svg';
@@ -26,5 +30,9 @@ export {
   card_bg_2,
   card_bg_3,
   card_bg_4,
-  card_bg_5
+  card_bg_5,
+  company_name,
+  burger,
+  logo,
+  cross
 };

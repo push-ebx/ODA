@@ -765,6 +765,36 @@ export interface ApiFaqFaq extends Schema.CollectionType {
   };
 }
 
+export interface ApiHomePageHomePage extends Schema.SingleType {
+  collectionName: 'home_pages';
+  info: {
+    singularName: 'home-page';
+    pluralName: 'home-pages';
+    displayName: 'home-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    presentation: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -784,6 +814,7 @@ declare module '@strapi/types' {
       'api::carousel-button.carousel-button': ApiCarouselButtonCarouselButton;
       'api::carousel-card.carousel-card': ApiCarouselCardCarouselCard;
       'api::faq.faq': ApiFaqFaq;
+      'api::home-page.home-page': ApiHomePageHomePage;
     }
   }
 }
