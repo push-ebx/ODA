@@ -1,3 +1,5 @@
+@import '../../breakpoints';
+
 .form {
   width: 100%;
   display: flex;
@@ -30,6 +32,5 @@
   button {
     width: 100%;
     margin-top: .63rem;
-
   }
 }

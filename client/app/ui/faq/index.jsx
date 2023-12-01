@@ -6,7 +6,7 @@ import {useState} from "react";
 import Image from 'next/image'
 import plus from '@/public/svg/plus.svg';
 
-export const FAQ = ({className, faq}) => {
+export const FAQ = ({faq}) => {
   const [currentOpened, setCurrentOpened] = useState(null);
 
   const handleClick = (i) => {
@@ -23,10 +23,10 @@ export const FAQ = ({className, faq}) => {
       {
         faq?.length &&
         faq.map((item, i) => (
-          <div key={i} className={styles.question_answer}>
+          <div key={i} className={styles.question_answer} onClick={() => handleClick(i)}>
             <div className={clsx(styles.question)}>
               <span className={'headline_1'}>{item.question}</span>
-              <Image onClick={() => handleClick(i)} src={plus} alt={plus}/>
+              <Image src={plus} alt={plus}/>
             </div>
             <div className={clsx(styles.answer, currentOpened === i && styles.answer_opened)}>
               <span className={'text_1'}>{item.answer}</span>

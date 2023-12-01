@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73e1449-897e-4a4c-8193-dd409118d917" name="Changes" comment="cms">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/breakpoints.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/breakpoints.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/globals.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/page.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/page.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/button/button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/button/button.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/footer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/header/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/header/header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/popup-button/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/popup-button/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/carousel-button/content-types/carousel-button/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/cms/src/api/carousel-button/content-types/carousel-button/schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/src/api/home-page/content-types/home-page/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/cms/src/api/home-page/content-types/home-page/schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cms/types/generated/contentTypes.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cms/types/generated/contentTypes.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/carousel/carousel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/carousel/carousel.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/faq/faq.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/faq/faq.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/faq/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/faq/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/footer/footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/footer/footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/form/form.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/form/form.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +90,17 @@
       <workItem from="1701280354178" duration="53000" />
       <workItem from="1701366696139" duration="4725000" />
       <workItem from="1701374273811" duration="1674000" />
-      <workItem from="1701423698765" duration="2937000" />
+      <workItem from="1701423698765" duration="9231000" />
     </task>
+    <task id="LOCAL-00001" summary="cms">
+      <option name="closed" value="true" />
+      <created>1701435411255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701435411255</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

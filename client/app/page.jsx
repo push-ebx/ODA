@@ -145,7 +145,7 @@ export default async function Home() {
             <h2 className={'title_2'}>Автоматизируйте ваш автопарк</h2>
             <span className={'subhead_2'}>Оставьте заявку и мы свяжемся с вами в ближайшее время</span>
           </div>
-          <Form />
+          <Form className={styles.form}/>
         </section>
       </div>
     </main>

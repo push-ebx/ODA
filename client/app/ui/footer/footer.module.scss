@@ -9,6 +9,12 @@
   background: var(--card-backgound);
   padding: 5rem 9.38rem;
 
+  @include for-desktop-down() {
+    flex-direction: column;
+    row-gap: 2.5rem;
+    padding: 3.12rem 9.38rem;
+  }
+
   @include for-tablet-down() {
     flex-direction: column;
     padding: 5.17rem 0;
@@ -25,6 +31,11 @@
     justify-content: center;
     row-gap: 1.88rem;
     letter-spacing: -0.02625rem;
+
+    @include for-desktop-down() {
+      position: relative;
+      row-gap: 2.5rem;
+    }
 
     @include for-tablet-down() {
       position: relative;

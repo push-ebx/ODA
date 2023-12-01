@@ -89,6 +89,12 @@ img {
   line-height: 110%;
   letter-spacing: -0.025rem;
 
+  @include for-desktop-down() {
+    font-size: 1.875rem;
+    line-height: 2.0625rem;
+    letter-spacing: -0.01875rem;
+  }
+
   @include for-tablet-down() {
     font-size: 2rem;
     letter-spacing: -0.02rem;
@@ -100,6 +106,12 @@ img {
   font-size: 2rem;
   font-weight: 600;
   line-height: 120%;
+
+  @include for-desktop-down() {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+  }
 }
 
 .subhead_1 {
@@ -122,6 +134,12 @@ img {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.1rem;
+
+  @include for-desktop-down() {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 
 .text_1 {
@@ -129,6 +147,10 @@ img {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 140%;
+
+  @include for-desktop-down() {
+    line-height: 1.4625rem;
+  }
 
   @include for-tablet-down() {
     line-height: 130%;

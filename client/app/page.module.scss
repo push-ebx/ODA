@@ -33,10 +33,6 @@
     }
 
     .welcome_section {
-      //h1 {
-      //  max-width: 33rem;
-      //}
-
       .buttons_image {
         display: flex;
         flex-direction: column;
@@ -81,6 +77,11 @@
         padding: 0.72rem 1.56rem 3rem;
         width: 100%;
 
+        @include for-desktop-down() {
+          border-radius: 0.57706rem;
+          padding: 0.49rem 1rem 1.91rem;
+        }
+
         @include for-tablet-down() {
           padding: 0.3rem 0.62rem 1.23rem;
           border-radius: 0.36269rem;
@@ -123,6 +124,11 @@
           width: 65.625rem;
           height: 39.375rem;
 
+          @include for-desktop-down() {
+            width: 41.76144rem;
+            height: 25.05563rem;
+          }
+
           @include for-tablet-down() {
             width: 26.25rem;
             height: 15.74919rem;
@@ -156,7 +162,6 @@
           padding-left: 2.5rem;
           justify-content: space-between;
           align-items: center;
-          border-radius: 1.25rem;
           overflow: hidden;
 
           @include for-tablet-down() {
@@ -322,15 +327,23 @@
           column-gap: 7.5rem;
           align-items: center;
 
-          @include for-tablet-down() {
+          @include for-desktop-down() {
             flex-direction: column;
             align-items: start;
+          }
+
+          @include for-tablet-down() {
             padding: 1.5rem;
           }
 
           img {
             width: 12.5rem;
             height: 12.5rem;
+
+            @include for-desktop-down() {
+              width: 7rem;
+              height: 7rem;
+            }
 
             @include for-tablet-down() {
               width: 6.625rem;
@@ -361,7 +374,7 @@
           gap: 2.5rem;
           width: 100%;
 
-          @include for-tablet-down() {
+          @include for-desktop-down() {
             flex-direction: column;
             height: auto;
           }
@@ -395,6 +408,22 @@
       width: 100%;
       margin: 7.5rem 0;
 
+      .form {
+        @include for-desktop-down() {
+          align-items: center;
+
+          input, button {
+              max-width: 22rem;
+          }
+        }
+      }
+
+      @include for-desktop-down() {
+        flex-direction: column;
+        row-gap: 3.12rem;
+        margin: 3.75rem 0;
+      }
+
       @include for-tablet-down() {
         flex-direction: column;
         row-gap: 5rem;
@@ -408,6 +437,11 @@
         width: 100%;
         max-width: 29rem;
         text-align: left;
+
+        @include for-desktop-down() {
+          max-width: 100%;
+          text-align: center;
+        }
       }
     }
   }
