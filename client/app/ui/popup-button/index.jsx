@@ -7,12 +7,12 @@ import {useState} from "react";
 import {Form} from "@/app/ui/form";
 import clsx from "clsx";
 
-export const PopupButton = ({rounded}) => {
+export const PopupButton = ({rounded, className}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <Button className={clsx(rounded && styles.rounded)} onClick={() => setIsOpen(true)}>
+      <Button className={clsx(rounded && styles.rounded, className)} onClick={() => setIsOpen(true)}>
         Подключиться
       </Button>
       <Popup className={styles.popup} isOpen={isOpen} closePopup={() => setIsOpen(false)}>

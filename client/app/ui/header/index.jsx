@@ -21,7 +21,7 @@ export const Header = () => {
       </nav>
 
       {/*<Button className={styles.button}>Подключиться</Button>*/}
-      <PopupButton rounded/>
+      <PopupButton className={styles.button} rounded/>
       <Image className={styles.burger} src={burger} alt="burger"/>
     </header>
   )

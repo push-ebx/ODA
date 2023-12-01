@@ -6,16 +6,16 @@ import { FAQ } from "@/app/ui/faq";
 import { card_bg_2, card_bg_3, card_bg_5 } from '@/public/svg';
 import { lock, people, headphone, management } from '@/public/png';
 import { card_bg_4, card_bg_1 } from '@/public/jpg';
-import {getCarouselButtons, getCarouselCards, getFAQ, getPresentationLink} from "@/app/api";
+import {getCarouselButtons, getCarouselCards, getFAQ, getHomePageData} from "@/app/api";
 import {ButtonLink} from "@/app/ui/button-link";
 import {PopupButton} from "@/app/ui/popup-button";
 import {Form} from "@/app/ui/form";
 
-export default async function Home({ repo }) {
+export default async function Home() {
   const carousel_cards = await getCarouselCards();
   const carousel_buttons = await getCarouselButtons();
   const faq = await getFAQ();
-  const presentation_link = await getPresentationLink();
+  const {presentation_url} = await getHomePageData();
 
   return (
     <main className={styles.main}>
@@ -27,7 +27,7 @@ export default async function Home({ repo }) {
           <div className={styles.buttons_image}>
             <div className={styles.buttons}>
               <PopupButton />
-              <ButtonLink link={presentation_link} download>
+              <ButtonLink link={presentation_url} download>
                 Открыть презентацию
               </ButtonLink>
             </div>
@@ -93,7 +93,7 @@ export default async function Home({ repo }) {
           </div>
           <div className={styles.buttons}>
             <PopupButton />
-            <ButtonLink link={presentation_link} download>
+            <ButtonLink link={presentation_url} download>
               Открыть презентацию
             </ButtonLink>
           </div>
@@ -102,7 +102,7 @@ export default async function Home({ repo }) {
         <section className={clsx(styles.section, styles.carousel_section)}>
           <h2 className={'title_2'}>Сделает все за вас</h2>
           <span className={'subhead_2'}>Гибкая система модулей позволяет автоматизировать именно те процессы, которые нужны вам</span>
-          <Carousel cards={carousel_cards} buttons={carousel_buttons} presentation_link={presentation_link} />
+          <Carousel cards={carousel_cards} buttons={carousel_buttons} presentation_link={presentation_url} />
         </section>
 
         <section className={clsx(styles.connect_train_section, styles.section)}>

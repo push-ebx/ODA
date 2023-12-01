@@ -4,7 +4,8 @@
   "info": {
     "singularName": "carousel-button",
     "pluralName": "carousel-buttons",
-    "displayName": "carousel-button"
+    "displayName": "carousel-button",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,14 +17,15 @@
       "required": true
     },
     "icon_button": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

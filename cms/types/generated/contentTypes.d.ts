@@ -683,6 +683,7 @@ export interface ApiCarouselButtonCarouselButton extends Schema.CollectionType {
     singularName: 'carousel-button';
     pluralName: 'carousel-buttons';
     displayName: 'carousel-button';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -771,12 +772,15 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     singularName: 'home-page';
     pluralName: 'home-pages';
     displayName: 'home-page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    presentation: Attribute.Media;
+    presentation: Attribute.Media & Attribute.Required;
+    footer_phone: Attribute.String & Attribute.Required;
+    footer_email: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -12,6 +12,10 @@
     text-align: center;
     max-width: 70rem;
 
+    @include for-desktop-down() {
+      max-width: 43.75rem;
+    }
+
     @include for-tablet-down() {
       max-width: 27.5rem;
     }
@@ -29,6 +33,10 @@
     }
 
     .welcome_section {
+      //h1 {
+      //  max-width: 33rem;
+      //}
+
       .buttons_image {
         display: flex;
         flex-direction: column;

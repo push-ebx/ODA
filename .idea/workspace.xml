@@ -4,36 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f73e1449-897e-4a4c-8193-dd409118d917" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/app/breakpoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/ui/button-link/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/ui/form/form.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/ui/form/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/ui/popup-button/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/ui/popup-button/popup_button.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/ui/popup/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/app/ui/popup/popup.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/jpg/card-bg-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/jpg/card-bg-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/svg/burger.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/svg/cross.svg" afterDir="false" />
+    <list default="true" id="f73e1449-897e-4a4c-8193-dd409118d917" name="Changes" comment="cms">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/breakpoints.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/breakpoints.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/globals.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/page.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/page.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/carousel/carousel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/carousel/carousel.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/carousel/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/carousel/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/faq/faq.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/faq/faq.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/footer/footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/footer/footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/button/button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/button/button.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/ui/footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/footer/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/ui/header/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/header/header.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/ui/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/jpg/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/jpg/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/png/Headphone-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/png/Headphone-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/png/Lock-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/png/Lock-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/png/People-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/png/People-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/svg/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/svg/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/popup-button/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/popup-button/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/src/api/carousel-button/content-types/carousel-button/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/cms/src/api/carousel-button/content-types/carousel-button/schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cms/src/api/home-page/content-types/home-page/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/cms/src/api/home-page/content-types/home-page/schema.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cms/types/generated/contentTypes.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cms/types/generated/contentTypes.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,10 +93,18 @@
       <workItem from="1700988747793" duration="4502000" />
       <workItem from="1701001225292" duration="12652000" />
       <workItem from="1701088971050" duration="1789000" />
+      <workItem from="1701280354178" duration="53000" />
+      <workItem from="1701366696139" duration="4725000" />
+      <workItem from="1701374273811" duration="1674000" />
+      <workItem from="1701423698765" duration="2937000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cms" />
+    <option name="LAST_COMMIT_MESSAGE" value="cms" />
   </component>
 </project>

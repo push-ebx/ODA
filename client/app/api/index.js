@@ -54,14 +54,17 @@ export async function getFAQ() {
   }
 }
 
-export async function getPresentationLink() {
+export async function getHomePageData() {
   noStore();
   const query_url = strapi_url + '/api/home-page?populate=*';
 
   try {
     const response = await fetch(query_url)
     const {data} = await response.json();
-    return strapi_url + data.attributes.presentation.data.attributes.url;
+    const {presentation, footer_phone, footer_email} = data.attributes
+    const presentation_url = strapi_url + presentation.data.attributes.url;
+
+    return {presentation_url, footer_phone, footer_email};
   } catch (error){
     console.log("error", error.message)
   }

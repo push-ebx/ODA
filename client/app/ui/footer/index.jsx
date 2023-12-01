@@ -3,8 +3,11 @@ import Image from 'next/image';
 import logo from '@/public/svg/logo.svg';
 import company_name from '@/public/svg/company-name.svg';
 import clsx from 'clsx';
+import {getHomePageData} from "@/app/api";
 
-export const Footer = () => {
+export const Footer = async () => {
+  const {footer_email, footer_phone} = await getHomePageData();
+
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>
@@ -20,8 +23,8 @@ export const Footer = () => {
           <span>Основные вопросы</span>
         </div>
         <div className={styles.contacts}>
-          <span>+7 (499) 444-77-08</span>
-          <span>odasmart@yandex.ru</span>
+          <span>{footer_phone}</span>
+          <span>{footer_email}</span>
         </div>
       </nav>
 
