@@ -7,7 +7,7 @@ import { card_bg_2, card_bg_3, card_bg_5 } from '@/public/svg';
 import { lock, people, headphone, management } from '@/public/png';
 import { card_bg_4, card_bg_1 } from '@/public/jpg';
 import {getCarouselButtons, getCarouselCards, getFAQ, getHomePageData} from "@/app/api";
-import {ButtonLink} from "@/app/ui/button-link";
+import {ButtonLink} from "@/app/ui/link-button";
 import {PopupButton} from "@/app/ui/popup-button";
 import {Form} from "@/app/ui/form";
 

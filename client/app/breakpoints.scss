@@ -5,3 +5,7 @@
 @mixin for-tablet-down {
   @media (max-width: 480px) { @content; }
 }
+
+@mixin for-desktop-up {
+  @media (min-width: 781px) { @content; }
+}

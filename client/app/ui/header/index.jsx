@@ -1,9 +1,9 @@
 import styles from './header.module.scss';
 import Image from 'next/image';
-import { company_name, burger, logo } from '@/public/svg';
+import { company_name, logo } from '@/public/svg';
 import clsx from 'clsx';
-import { Button } from "@/app/ui";
 import {PopupButton} from "@/app/ui/popup-button";
+import {BurgerButton} from "@/app/ui/burger-button";
 
 export const Header = () => {
   return (
@@ -20,9 +20,8 @@ export const Header = () => {
         <span>Основные вопросы</span>
       </nav>
 
-      {/*<Button className={styles.button}>Подключиться</Button>*/}
       <PopupButton className={styles.button} rounded/>
-      <Image className={styles.burger} src={burger} alt="burger"/>
+      <BurgerButton />
     </header>
   )
 }

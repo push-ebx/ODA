@@ -81,15 +81,4 @@
       display: none;
     }
   }
-
-  .burger {
-    display: none;
-    width: 3rem;
-    height: 0.8rem;
-    cursor: pointer;
-
-    @include for-desktop-down {
-      display: block;
-    }
-  }
 }

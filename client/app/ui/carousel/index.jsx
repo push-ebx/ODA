@@ -5,8 +5,7 @@ import clsx from 'clsx';
 import { useState } from "react";
 import { Button } from "@/app/ui";
 import Image from 'next/image'
-import Link from "next/link";
-import {ButtonLink} from "@/app/ui/button-link";
+import {ButtonLink} from "@/app/ui/link-button";
 
 export const Carousel = ({cards, buttons, presentation_link, className}) => {
   const [currentSlide, setCurrentSlide] = useState(0);

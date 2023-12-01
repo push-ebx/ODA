@@ -10,6 +10,7 @@ import company_name from './company-name.svg';
 import burger from './burger.svg';
 import logo from './logo.svg';
 import cross from './cross.svg';
+import checkbox from './checkbox.svg';
 
 import card_bg_1 from './card-bg-1.svg';
 import card_bg_2 from './card-bg-2.svg';
@@ -34,5 +35,6 @@ export {
   company_name,
   burger,
   logo,
-  cross
+  cross,
+  checkbox
 };

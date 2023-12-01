@@ -22,6 +22,11 @@
   align-items: center;
   row-gap: 2.5rem;
 
+  @include for-desktop-down() {
+    width: 26.25rem;
+    margin: 2.5rem auto 0;
+  }
+
   @include for-tablet-down() {
     width: 22.5rem;
     margin: 2.5rem auto 0;

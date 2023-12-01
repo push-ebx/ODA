@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f73e1449-897e-4a4c-8193-dd409118d917" name="Changes" comment="cms">
+    <list default="true" id="f73e1449-897e-4a4c-8193-dd409118d917" name="Changes" comment="average adaptive without cards">
+      <change afterPath="$PROJECT_DIR$/client/app/ui/burger-button/burger-button.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/app/ui/burger-button/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/app/ui/burger-menu/burger-menu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/app/ui/burger-menu/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/app/ui/checkbox/checkbox.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/app/ui/checkbox/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/svg/checkbox.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/breakpoints.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/breakpoints.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/globals.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/page.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/button-link/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/link-button/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/button/button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/button/button.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/app/ui/carousel/carousel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/carousel/carousel.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/faq/faq.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/faq/faq.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/faq/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/faq/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/footer/footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/footer/footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/app/ui/form/form.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/form/form.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/carousel/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/carousel/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/form/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/form/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/header/header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/header/header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/popup-button/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/popup-button/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/app/ui/popup-button/popup_button.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/app/ui/popup-button/popup_button.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/svg/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/svg/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +77,10 @@
       <recent name="C:\Users\nikit\WebstormProjects\oda\client\app\ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nikit\WebstormProjects\oda\client\public\jpg" />
-      <recent name="C:\Users\nikit\WebstormProjects\oda\client\public\png" />
-      <recent name="C:\Users\nikit\WebstormProjects\oda\client\public" />
       <recent name="C:\Users\nikit\WebstormProjects\oda\client\public\svg" />
+      <recent name="C:\Users\nikit\WebstormProjects\oda\client\public\png" />
+      <recent name="C:\Users\nikit\WebstormProjects\oda\client\public\jpg" />
+      <recent name="C:\Users\nikit\WebstormProjects\oda\client\public" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,7 +102,7 @@
       <workItem from="1701280354178" duration="53000" />
       <workItem from="1701366696139" duration="4725000" />
       <workItem from="1701374273811" duration="1674000" />
-      <workItem from="1701423698765" duration="9231000" />
+      <workItem from="1701423698765" duration="21978000" />
     </task>
     <task id="LOCAL-00001" summary="cms">
       <option name="closed" value="true" />
@@ -100,14 +112,25 @@
       <option name="project" value="LOCAL" />
       <updated>1701435411255</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="average adaptive without cards">
+      <option name="closed" value="true" />
+      <created>1701441908202</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701441908202</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="cms" />
-    <option name="LAST_COMMIT_MESSAGE" value="cms" />
+    <MESSAGE value="average adaptive without cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="average adaptive without cards" />
   </component>
 </project>
